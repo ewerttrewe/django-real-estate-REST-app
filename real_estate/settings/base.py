@@ -16,8 +16,6 @@ SECRET_KEY = env("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env("DEBUG")
 ALLOWED_HOSTS = env("ALLOWED_HOSTS").split(" ")
-
-
 # Application definition
 
 DJANGO_APPS = [
@@ -137,11 +135,7 @@ REST_FRAMEWORK = {
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     )
 }
-EMAIL_HOST='sandbox.smtp.mailtrap.io'
-EMAIL_HOST_USER='e61f02d9f7d37a'
-EMAIL_HOST_PASSWORD='62c3421c12973c'
-EMAIL_PORT=2525
-DOMAIN='localhost:8000'
+
 
 
 from datetime import timedelta
@@ -177,6 +171,12 @@ DJOSER = {
         'user_delete':'djoser.serializers.UserSerializer'
     }
 }
+
+EMAIL_HOST='sandbox.smtp.mailtrap.io'
+EMAIL_HOST_USER='e61f02d9f7d37a'
+EMAIL_HOST_PASSWORD='62c3421c12973c'
+EMAIL_PORT=2525
+DOMAIN='localhost:8000'
 
 import logging
 import logging.config

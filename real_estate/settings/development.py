@@ -11,6 +11,7 @@ SITE_NAME = "Real Estate"
 
 
 
+
 DATABASES = {
     "default": {
         "ENGINE": env("POSTGRES_ENGINE"),
