@@ -172,11 +172,15 @@ DJOSER = {
     }
 }
 
-EMAIL_HOST='sandbox.smtp.mailtrap.io'
-EMAIL_HOST_USER='e61f02d9f7d37a'
-EMAIL_HOST_PASSWORD='62c3421c12973c'
-EMAIL_PORT=2525
-DOMAIN='localhost:8000'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_USE_TLS = '2525'
+EMAIL_HOST = 'sandbox.smtp.mailtrap.io'
+EMAIL_HOST_USER = 'e61f02d9f7d37a'
+EMAIL_HOST_PASSWORD = '62c3421c12973c'
+EMAIL_PORT = '2525'
+DOMAIN = 'localhost:8000'
+DEFAULT_FROM_EMAIL = 'info@real-estate.com'
+SITE_NAME = 'Real Estate'
 
 import logging
 import logging.config
