@@ -36,7 +36,7 @@ class Property(TimeStampedUUIDModel):
     description = models.TextField(verbose_name=_("Description"), default="Default description...update me!")
     country = CountryField(verbose_name=_("Country"), default="PL", blank_label="Select Country")
     city = models.CharField(verbose_name=_("City"), max_length=180, default='Warsaw')
-    postal_code = models.CharField(verbose_name=_("City"), max_length=100, default='140')
+    postal_code = models.CharField(verbose_name=_("Postal Code"), max_length=100, default='140')
     street_address = models.CharField(verbose_name=_("Street Address"), max_length=150, default='Street Address')
     property_number = models.IntegerField(verbose_name=_("Property Number"), validators=[MinValueValidator(1)], default=122)
     price = models.DecimalField(verbose_name=_("Price"), max_digits=8, decimal_places=2, default=0.0)
