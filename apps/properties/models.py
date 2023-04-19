@@ -121,7 +121,7 @@ class Property(TimeStampedUUIDModel):
 
 class PropertyViews(TimeStampedUUIDModel):
     ip = models.CharField(verbose_name=_("IP Address"), max_length=250)
-    particular_property = models.ForeignKey(Property, related_name="property_views", on_delete=models.CASCADE)
+    property = models.ForeignKey(Property, related_name="property_views", on_delete=models.CASCADE)
 
     class Meta:
         verbose_name = "Total Views on Property"
