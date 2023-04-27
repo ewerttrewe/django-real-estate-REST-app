@@ -20,9 +20,9 @@ ALLOWED_HOSTS = env("ALLOWED_HOSTS").split(" ")
 # Application definition
 
 DJANGO_APPS = [
+    'django.contrib.contenttypes',
     'django.contrib.admin',
     'django.contrib.auth',
-    'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
@@ -38,6 +38,7 @@ THIRD_PARTY_APPS = [
     'phonenumber_field',
     'djoser',
     'rest_framework_simplejwt',
+    'djcelery_email',
 
 ]
 
@@ -175,15 +176,18 @@ DJOSER = {
     }
 }
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_USE_TLS = '2525'
-EMAIL_HOST = 'sandbox.smtp.mailtrap.io'
-EMAIL_HOST_USER = 'e61f02d9f7d37a'
-EMAIL_HOST_PASSWORD = '62c3421c12973c'
-EMAIL_PORT = '2525'
-DOMAIN = 'localhost:8000'
-DEFAULT_FROM_EMAIL = 'info@real-estate.com'
-SITE_NAME = 'Real Estate'
+EMAIL_BACKEND = "djcelery_email.backends.CeleryEmailBackend"
+EMAIL_USE_TLS = "2525"
+EMAIL_HOST = "sandbox.smtp.mailtrap.io"
+EMAIL_HOST_USER = "e61f02d9f7d37a"
+EMAIL_HOST_PASSWORD = "62c3421c12973c"
+EMAIL_PORT = "2525"
+DOMAIN = "localhost:8080"
+DEFAULT_FROM_EMAIL = "info@real-estate.com"
+SITE_NAME = "Real Estate"
+CELERY_BROKER_URL = env("CELERY_BROKER")
+CELERY_RESULT_BACKEND = env("CELERY_BACKEND")
+CELERY_TIMEZONE = "UTC"
 
 import logging
 import logging.config
