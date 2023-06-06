@@ -64,7 +64,7 @@ After that you can install make via `choco install make` command<br>
 8. Containers should be up and running properly, you can check if indeed they are by running `docker ps` command<br>
 9. Now you should create a super user with `make superuser` command.<br><br>
 10. After all the steps from 1 - 9 you should be able to connect to all endpoints, particularly:<br><br>
-&nbsp;&nbsp;`http://localhost:8080/supersecret/` which is for django admin page, you can log in to the page using credentials you created in previous step.<br>
-&nbsp;&nbsp;`http://localhost:5557/` which is for Flower to monitor all the async request that are being made, please note that to test mail functionality as well as logging in and authentication you can use insomnia or postman and test particular endpoints which are defined in `urls.py` files.<br>
-&nbsp;&nbsp;`http://localhost:8080/` which is endpoint for frontend client
+&nbsp;&nbsp;`http://localhost:8080/supersecret/` which is for django admin page, you can log in to the page using credentials you created in previous step.<br><br>
+&nbsp;&nbsp;`http://localhost:5557/` which is for Flower to monitor all the async request that are being made, please note that to test mail functionality as well as logging in and authentication you can use insomnia or postman and test particular endpoints which are defined in `urls.py` files.<br><br>
+&nbsp;&nbsp;`http://localhost:8080/` which is endpoint for frontend client<br><br>
 
