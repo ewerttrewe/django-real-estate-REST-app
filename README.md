@@ -57,7 +57,7 @@ To be able to do that cd to root directory where requirements.txt file sits and 
  &nbsp;&nbsp;`pip install -r requirements.txt`<br>
 You can check if all the packages are installed by typing `pip list`<br>
 If on windows, in order to use `make` command you have to install choclatey, follow the instalation process on [choclatey](https://chocolatey.org/install)<br>
-After that you can install make via `choco install make` command<br>
+After that you can install `make` via `choco install make` command<br>
 **Now you can use `make` command and also you can check your version of choclatey using `choco -?`**<br><br>
 6. Download and install [Docker Desktop](https://www.docker.com/products/docker-desktop/).<br>
 7. After installation run `make build` command in the CLI while being in root directory of the project.<br>
