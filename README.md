@@ -1,4 +1,4 @@
-![GitHub last commit](https://img.shields.io/github/last-commit/ewerttrewe/fullstack-real-estate-app?style=plastic) 
+![GitHub last commit](https://img.shields.io/github/last-commit/ewerttrewe/fullstack-real-estate-app?style=plastic) ![Maintenance](https://img.shields.io/maintenance/no/2023)
 
 
 # Real Estate App
