@@ -178,11 +178,11 @@ DJOSER = {
 
 EMAIL_BACKEND = "djcelery_email.backends.CeleryEmailBackend"
 EMAIL_USE_TLS = "2525"
-EMAIL_HOST = "sandbox.smtp.mailtrap.io"
-EMAIL_HOST_USER = "e61f02d9f7d37a"
-EMAIL_HOST_PASSWORD = "62c3421c12973c"
-EMAIL_PORT = "2525"
-DOMAIN = "localhost:8080"
+EMAIL_HOST = env('EMAIL_HOST')
+EMAIL_HOST_USER = env('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD')
+EMAIL_PORT = env('EMAIL_PORT')
+DOMAIN = env('DOMAIN')
 DEFAULT_FROM_EMAIL = "info@real-estate.com"
 SITE_NAME = "Real Estate"
 CELERY_BROKER_URL = env("CELERY_BROKER")
