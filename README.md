@@ -4,7 +4,7 @@
 # Real Estate App
 App made with: React, Django, DRF, Celery, Redis, PostgreSQL, NGNX, Docker and more...
 
-> **Disclaimer:** This application provide backend service for Real Estate App where users are able to buy, sell, rent and auction properties. Front-end part of the app is only created to test if the NGINX used as reverse proxy would serve data on the same port as API, so it's not finished and there are not any current plans for future frontend development of this app. Also steps which you are about to read,in order to run this app on your local machine, assume that you have Visual Studio Code, Python >=3.6 and Node.js >=17.9.1, PostgreSQL >= 12.15.
+> **Disclaimer:** This application provide backend service for Real Estate App where users are able to buy, sell, rent and auction properties. Front-end part of the app is only created to test if the NGINX used as reverse proxy would serve data on the same port as API, so it's not finished and there are not any current plans for future frontend development of this app. Also steps which you are about to read,in order to run this app on your local machine, assume that you have Visual Studio Code or any other editor or IDE, Python >=3.6 and Node.js >=17.9.1, PostgreSQL >= 12.15.
 
 In order to use app and test it on your local machine follow the steps below:
 
